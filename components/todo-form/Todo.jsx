@@ -26,8 +26,7 @@ export default function Todo({ setShow }) {
       console.error("Error inserting data:", error.message);
     } else {
       console.log("Data inserted successfully:", insertData);
-
-      // Close the modal after successful data insertion
+      window.location.reload();
       setShow(false); // This will hide the modal
     }
   };
